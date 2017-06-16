@@ -1,0 +1,28 @@
+<!--流程引导-->
+<view class="top_bg mgb10">
+    <view id="top_nav" class="flex-wrap">
+        <view class="nav_item_1">验证手机</view>
+        <view class="nav_item_2 cur">开立账户</view>
+        <view class="nav_item_3">选择服务</view>
+    </view>
+</view>
+
+
+<view class="agreement_list section">
+    <view class="ag_tt">阅读并签署以下开户及证券交易相关协议：</view>
+    <view class="text-gold">《客户须知（佣金设置请您查阅第七条）》</view>
+    <view class="text-gold">《防范非法证券行为风险揭示书》</view>
+    <view class="text-gold">《证券投资基金投资人权益须知》</view>
+    <view class="text-gold">《投资者未按要求提供信息的风险提示书》</view>
+
+    <view class="ag_tt mgt30">阅读并签署以下金融产品、服务产品相关协议：</view>
+    <view class="text-gold">《客户须知（佣金设置请您查阅第七条）》</view>
+    <view class="text-gold">《防范非法证券行为风险揭示书》</view>
+    <view class="text-gold">《证券投资基金投资人权益须知》</view>
+    <view class="text-gold">《投资者未按要求提供信息的风险提示书》</view>
+</view>
+
+
+<view class="section mgt20">
+    <button bindtap="toVideo" class="btn lg-btn red-btn" hover-class="red-hover">下一步</button>
+</view>

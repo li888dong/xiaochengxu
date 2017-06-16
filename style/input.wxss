@@ -1,0 +1,77 @@
+
+/*input*/
+.input{
+    padding:6rpx;
+    height: 60rpx;
+    color: #333;
+    font-size: 28rpx;
+}
+
+.input_sm, .input_sm input {
+	width: 60% !important;
+	margin-left: 15% !important;
+}
+
+.input_lg, .input_lg input {
+	width: 100% !important;
+}
+
+.form_item input, .form_item picker{
+  display: block;
+    width: 73%;
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #333;
+    margin-left: 160rpx;
+    font-size: 28rpx;
+}
+
+.form_item picker{
+    width: 75%;
+    line-height: 78rpx;
+    padding-left: 8rpx;
+}
+
+
+
+/*checkbox*/
+.checkbox{
+  position: relative;
+  width: 100%;
+  padding-left: 40rpx;
+}
+.checkbox .checkbtn{
+  left:0;
+  top: 1rpx;
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.checkbox .checkbtn.on{
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.checkbox .checkbtn.off{
+  display: inline-block;
+   width: 30rpx;
+  height: 30rpx;
+}
+
+
+/*radio*/
+
+
+
+/*textarea*/
+.form_item textarea{
+    width: 75%;
+    min-height: 40rpx;
+    line-height: 40rpx;
+    color: #333;
+    margin: 0 0 0 160rpx;
+    font-size: 28rpx;
+    padding: 24rpx 0 0 8rpx;
+    font-weight: normal;
+}

@@ -1,0 +1,40 @@
+
+<!--流程引导-->
+<view class="top_bg mgb10">
+  <view id="top_nav" class="flex-wrap">
+    <view class="nav_item_1">验证手机</view>
+    <view class="nav_item_2">开立账户</view>
+    <view class="nav_item_3 cur">选择服务</view>
+  </view>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section form_item bdbc">
+      <label>
+        <text>选择银行</text>
+        <picker class="picker" mode="selector" bindchange="bindBankChange" value="{{bankIndex}}" range="{{bankArr}}">{{bankArr[bankIndex]}}</picker>
+      </label>
+    </view>
+  <view class="section form_item bdbc">
+    <label>
+      <text>银行卡号</text>
+      <input type="number" class="input" placeholder-style="color:#b2b2b2" placeholder="请填写银行卡号" bindinput="bankCard"/>
+    </label>
+  </view>
+  <view class="section form_item bdbc" wx-if="{{bankIndex}}">
+    <label>
+      <text>银行密码</text>
+      <input type="password" class="input" placeholder-style="color:#b2b2b2" placeholder="请填写银行卡交易密码" bindinput="bankPassword"/>
+    </label>
+  </view>
+  <!--用户协议-->
+<view class="text-center" wx-if="{{bankIndex}}">
+    <label class="checkbox ft_12">
+        <button class="checkbtn on" bindtap="checkAgree" wx:if="{{agree}}"></button>
+        <button class="checkbtn off" bindtap="checkAgree" wx:else></button>
+        我已经阅读并同意《{{bankArr[bankIndex]}}三方存管协议》
+    </label>
+</view>
+  <view class="section mgt20">
+    <button class="btn lg-btn red-btn" hover-class="red-hover" bindtap="toRiskTest">下一步</button>
+  </view>
+</form>

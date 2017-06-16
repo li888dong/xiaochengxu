@@ -1,0 +1,9 @@
+<view class="container">
+  <canvas canvas-id="canvas" style="width: 400px; height: 375px;" />
+  <view class="btnGroup">
+    <image id="up" mode="aspectFit" src="{{isPressUp?directionImgUrl_press:directionImgUrl}}" bindtouchstart="directionTouchStart" bindtouchend="directionTouchEnd"></image>
+    <image id="down" mode="aspectFit" src="{{isPressDown?directionImgUrl_press:directionImgUrl}}" bindtouchstart="directionTouchStart" bindtouchend="directionTouchEnd"></image>
+    <image id="left" mode="aspectFit" src="{{isPressLeft?directionImgUrl_press:directionImgUrl}}" bindtouchstart="directionTouchStart" bindtouchend="directionTouchEnd"></image>
+    <image id="right" mode="aspectFit" src="{{isPressRight?directionImgUrl_press:directionImgUrl}}" bindtouchstart="directionTouchStart" bindtouchend="directionTouchEnd"></image>
+  </view>
+</view>

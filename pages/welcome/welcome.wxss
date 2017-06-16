@@ -1,0 +1,29 @@
+.welcome_top_box{
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.welcome_top_box .top_info{
+  position: absolute;
+  top:40rpx;
+  z-index: 20;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome_top_box image{
+  width: 100%;
+  height: 400rpx;
+}
+
+.flex-wrap{
+  width: 80%;
+  margin: 40rpx auto;
+}
+.icon_idcard, .icon_visa{
+  display: inline-block;
+  padding-top: 110rpx;
+  width: 120rpx;
+  height: 100rpx;
+}

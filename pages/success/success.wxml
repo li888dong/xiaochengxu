@@ -1,0 +1,12 @@
+<view class="success">
+  <image src="../../images/success.png" mode="aspectFit"></image>
+</view>
+<view class="ft_30 ft_bold text-center">
+  <text>开户申请成功</text>
+</view>
+<view class="ft_bold ft_16 mgt20 mgb20 text">
+  <text>工作人员将尽快审核您的资料并已短信的方式通知您</text>
+</view>
+<view class="section mgt20">
+  <button class="btn lg-btn red-btn" hover-class="red-hover" bindtap="showModal">返回首页</button>
+</view>

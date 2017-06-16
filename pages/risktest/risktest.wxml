@@ -1,0 +1,28 @@
+
+<!--流程引导-->
+<view class="top_bg mgb10">
+  <view id="top_nav" class="flex-wrap">
+    <view class="nav_item_1">验证手机</view>
+    <view class="nav_item_2">开立账户</view>
+    <view class="nav_item_3 cur">选择服务</view>
+  </view>
+</view>
+
+<!--问题模板-->
+<template name="risktest">
+  <radio-group class="radio-group bdtc pdt20 pdb20 pdl20 pdr20" bindchange="radioChange{{index}}">
+    <view class="ft_bold ft_16">{{index}}<text class="ft_12 text-gray">/10</text> {{question}}:</view>
+    <label class="radio" wx:for="{{answer}}"wx:key="{{answer.id}}">
+      <view class="ft_14 text-gray ft_bold mgt10">
+        <radio value="{{item.id}}" checked="{{item.checked}}" /> {{item.id}}.{{item.value}}
+      </view>
+    </label>
+  </radio-group>
+</template>
+
+<template is="risktest" data="{{...item1}}" />
+<template is="risktest" data="{{...item2}}" />
+<!--提交评测按钮-->
+<view class="btn_wrap mgt20 mgb40">
+    <button bindtap="toQuestionNaire" class="btn lg-btn red-btn" hover-class="red-hover">提交评测</button>
+</view>

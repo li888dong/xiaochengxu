@@ -1,0 +1,10 @@
+<!--tel.wxml-->
+
+<view class="tel">
+  <input placeholder="请输入要查询的手机号" auto-focus bindinput="getTelNum" />
+</view>
+<button bindtap="getTelInfo" type="default size=" default>查询手机号</button>
+<view class="classname" wx:for="{{telInfo}}">
+  <text wx:if="{{telInfo.mts}}">{{item}}</text>
+
+</view>

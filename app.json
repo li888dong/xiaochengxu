@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tax/tax",
+    "pages/game/game",
+    "pages/welcome/welcome",
+    "pages/mobile/mobile",
+    "pages/department/department",
+    "pages/idcard_f/idcard_f",
+    "pages/idcard_b/idcard_b",
+    "pages/face/face",
+    "pages/information/information",
+    "pages/agreement/agreement",
+    "pages/video/video",
+    "pages/service/service",
+    "pages/password/password",
+    "pages/thirdparty/thirdparty",
+    "pages/risktest/risktest",
+    "pages/questionnaire/questionnaire",
+    "pages/success/success",
+    "pages/tel/tel"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 10000
+  },
+  "debug": true
+}

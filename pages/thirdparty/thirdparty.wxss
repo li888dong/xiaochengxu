@@ -1,0 +1,22 @@
+.thirdpartyForm {
+  height: 100%;
+  padding: 15rpx 0;
+} 
+.flexRow{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin: 15rpx 0 0 5%;
+    box-sizing: border-box
+}
+
+.thirdpartyBtn{
+    width: 90%;
+    margin: 15rpx 0 0 5%;
+    color: white;
+    background-color: #B4A46B;
+    border-radius: 0!important
+}
+.borderBottom{
+    border-bottom: 1.5rpx solid silver
+}

@@ -1,0 +1,38 @@
+<view class="welcome_top_box">
+  <view class="top_info">
+    <view class="ft_32 mgb20">开启您的财富之门</view>
+    <view class="ft_bold ft_30">小方自助开户</view>
+  </view>
+  <image src="../../images/welcome_bg_banner.png"></image>
+</view>
+
+<view class="text-gray ft_16 text-center mgt20 mgb20">市场有风险，投资须谨慎</view>
+
+<view class="section">
+  <view class="text-center ft_bold ft_20">请您准备好</view>
+  <view class="flex-wrap">
+    <view class="flex-item">
+      <image class="icon_idcard" src="../../images/icon_idcard.png"></image>
+      <view>身份证</view>
+    </view>
+    <view class="flex-item">
+      <image class="icon_visa" src="../../images/icon_visa.png"></image>
+      <view>银行卡</view>
+    </view>
+  </view>
+</view>
+
+<!--用户协议-->
+<view class="text-center">
+  <label class="checkbox ft_16">
+    <image src="../../images/icon_checkbox_on.png" class="checkbtn on" bindtap="checkAgree" wx:if="{{agree}}"></image>
+    <image src="../../images/icon_checkbox_off.png" class="checkbtn off" bindtap="checkAgree" wx:else></image>
+    同意方正证券
+    <text class="text-underline" bindtap="toAgreement">用户协议</text>
+  </label>
+</view>
+
+<!--提交开户按钮-->
+<view class="btn_wrap mgt20 mgb40">
+  <button bindtap="{{ agree ? 'toMobile' : ''}}" class="btn lg-btn red-btn {{ agree ? '' : 'disabled'}}" hover-class="red-hover">立即开户</button>
+</view>

@@ -1,0 +1,58 @@
+<!--流程引导-->
+<view class="top_bg mgb10">
+    <view id="top_nav" class="flex-wrap">
+        <view class="nav_item_1">验证手机</view>
+        <view class="nav_item_2 cur">开立账户</view>
+        <view class="nav_item_3">选择服务</view>
+    </view>
+</view>
+
+
+<!--视频录制提示-->
+<view class="section video_tip_box">
+    <text>根据开户要求，您须录制一段视频，其间需用普通话大声朗读一段规定文字，录制后提交审核。</text>
+</view>
+
+<view class="section video_tips">
+    <text class="text-red">手机录制视频要求：</text>
+    <text>1.环境光线充足并安静</text>
+    <text>2.免冠并保持裸视，头部完整入镜</text>
+    <text>3.请佩戴有麦克风的手机耳机</text>
+    <text>4.录制持续时间限制为6~40秒</text>
+</view>
+
+<view class="section mgt20">
+     <button bindtap="videoTips" class="btn lg-btn red-btn" hover-class="red-hover">开始录制</button>
+</view>
+
+<!--视频录制弹层弹层-->
+<view class="dialog_memb {{showDialog ? '' : 'hide'}}"></view>
+<view class="dialog video_tips_dialog {{showDialog ? '' : 'hide'}}">
+    <view class="dialog_content">
+        <view class="ft_16 ft6">视频录制时请用普通话大声朗读，请务必提前<text class="ft_bold">记录</text>下述文字：</view>
+        <view class="tips_info">今天，本人xxx已阅读开户文件，自愿在方正证券开户。</view>
+    </view>
+
+    <view class="dialog_bot_box mgt20">
+        <button bindtap="startVideo" class="btn lg-btn red-btn" hover-class="red-hover">我记住了，开始录制</button>
+    </view>
+</view>
+
+
+<!--视频预览+上传-->
+<view class="dialog_memb {{showPreVideo ? '' : 'hide'}}"></view>
+<view class="video_pre_box {{showPreVideo ? '' : 'hide'}}">
+
+    <!--视频展示区-->
+    <view class="preVideo">
+        <video id="myVideo" src="{{videoSrc}}"  enable-danmu danmu-btn controls></video>
+        <!--重新录制-->
+        <button class="chooseBtnAgain" bindtap="rechooseVideo">重新录制</button>
+    </view>
+
+    <!--上传按钮-->
+    <view class="section mgt20">
+        <button bindtap="{{uploadSuccess ? 'toService' : 'uploadVideo'}}" class="btn lg-btn red-btn" hover-class="red-hover">{{uploadSuccess ? '下一步' : '上传视频'}}</button>
+    </view>
+
+</view>

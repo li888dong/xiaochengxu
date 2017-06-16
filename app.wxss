@@ -1,0 +1,193 @@
+/**app.wxss**/
+
+@import 'style/style.wxss';
+@import 'style/font.wxss';
+@import 'style/input.wxss';
+@import 'style/btn.wxss';
+@import 'style/picker.wxss';
+@import 'style/dialog.wxss';
+
+
+/**app.wxss**/
+page{
+    margin: 0;
+    padding: 0;
+}
+
+/*顶部流程*/
+.top_bg{
+    width: 100%;
+    background: #ececec;
+    margin: 0;
+}
+
+#top_nav{
+    margin: 0 auto;
+    width: 80%;
+    height: 60rpx;
+    line-height: 60rpx;
+    
+}
+
+#top_nav view{
+    color: #666;
+    font-size: 24rpx;
+    position: relative;
+    padding-left: 36rpx;
+    width: 33%;
+}
+
+#top_nav view::before{
+    position: absolute;
+    top:14rpx;
+    left:0;
+    display: block;
+    width: 26rpx;
+    height: 26rpx;
+    text-align: center;
+    line-height: 28rpx;
+    border-radius: 26rpx;
+    border: 2rpx solid #999;
+}
+
+#top_nav view::after{
+    content: "";
+    position: absolute;
+    top:26rpx;
+    right:0;
+    display: block;
+    width: 30%;
+    height: 2rpx;
+    background: #666;
+}
+
+#top_nav .nav_item_1::before{
+    content: "1";
+}
+#top_nav .nav_item_2::before{
+    content: "2";
+}
+#top_nav .nav_item_3::before{
+    content: "3";
+}
+#top_nav .nav_item_3::after{
+    display: none;
+}
+
+
+#top_nav view.cur{
+    font-weight: bolder;
+}
+
+#top_nav view.cur::before{
+    background: #999;
+    border: 2rpx solid #999;
+    color: #fff;
+}
+
+
+/*placehoder*/
+.placeholder_style{
+    font-size: 32rpx;
+    color: #b2b2b2;
+}
+
+
+/*form*/
+.form_item{
+    position: relative;
+    margin-top: 20rpx;
+    
+}
+
+.form_item label{
+    display: block;
+    font-size: 30rpx;
+    color: #666;
+    min-height: 80rpx;
+}
+
+.form_item label text{
+    position: absolute;
+    top: 26rpx;
+    left: 10rpx;
+}
+
+
+
+
+/*camera*/
+.top_camera_info{
+    width: 100%;
+    font-size: 30rpx;
+    color: #666;
+    text-align: center;
+    padding: 30rpx 0;
+    line-height: 46rpx;
+}
+
+.camera_box{
+    background: #f9f9f9;
+    border-top: 2rpx solid #ccc;
+    border-bottom: 2rpx solid #ccc;
+    height: 500rpx;
+    position: relative;
+}
+
+.chooseBtn{
+    width: 100%;
+    height: 300rpx;
+    
+}
+
+.camera_box image{
+    height: 450rpx;
+    text-align: center;
+    margin: 0 auto;
+}
+.chooseBtnAgain{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 200rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 28rpx;
+    background: #333;
+    color: #B4A46B;
+    border-radius: 0;
+}
+
+.camera_box .previewBox{
+    width: 100%;
+    height: 500rpx;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f9f9f9;
+    text-align:center;
+}
+
+.camera_box .previewBox .previewImg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-height: 500rpx;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

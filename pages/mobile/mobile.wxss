@@ -1,0 +1,15 @@
+.get_code_btn{
+    display: block;
+    width: 180rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background: #f4eac8;
+    font-size: 26rpx;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    bottom: 4rpx;
+    right: 0;
+    z-index: 20;
+    border-radius: 0;
+}

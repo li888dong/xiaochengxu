@@ -1,0 +1,45 @@
+/* pages/game/game.wxss */
+canvas{
+    transform: rotate(-90deg)
+}
+
+.btnGroup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#up{
+    position: absolute;
+    z-index: 1001;
+    width: 80rpx;
+    height: 80rpx;
+    right: 120rpx;
+    bottom: 180rpx;
+    transform: rotate(-180deg)
+}
+#down{
+    position: absolute;
+    z-index: 1001;
+    width: 80rpx;
+    height: 80rpx;
+    right: 120rpx;
+    bottom: 20rpx;
+}
+#left{
+    position: absolute;
+    z-index: 1001;
+    width: 80rpx;
+    height: 80rpx;
+    right: 40rpx;
+    bottom: 100rpx;
+    transform: rotate(-90deg)
+}
+#right{
+    position: absolute;
+    z-index: 1001;
+    width: 80rpx;
+    height: 80rpx;
+    right: 200rpx;
+    bottom: 100rpx;
+    transform: rotate(90deg)
+}

@@ -1,0 +1,14 @@
+.agreement_list{
+    margin-top: 40rpx;
+}
+
+.agreement_list .ag_tt{
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 20rpx;
+}
+
+.agreement_list .text-gold{
+    font-size: 32rpx;
+    line-height: 50rpx;
+}

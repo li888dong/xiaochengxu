@@ -1,0 +1,114 @@
+
+
+/*font*/
+
+.ft_white {
+	color: #fff !important;
+}
+
+.ft3 {
+	color: #333 !important;
+}
+
+.ft6 {
+	color: #666 !important;
+}
+
+.ft9 {
+	color: #999 !important;
+}
+
+.ftc {
+	color: #ccc !important;
+}
+
+.ft73 {
+	color: #737373 !important;
+}
+.ft_12 {
+	font-size: 24rpx !important;
+}
+
+.ft_14 {
+	font-size: 28rpx !important;
+}
+
+.ft_16 {
+	font-size: 32rpx !important;
+}
+
+.ft_18 {
+	font-size: 36rpx !important;
+}
+
+.ft_20 {
+	font-size: 40rpx !important;
+}
+
+.ft_24 {
+	font-size: 48rpx !important;
+}
+
+.ft_27 {
+	font-size: 54rpx !important;
+}
+
+.ft_30 {
+	font-size: 60rpx !important;
+}
+
+.ft_36 {
+	font-size: 72rpx !important;
+}
+
+.ft_40 {
+	font-size: 80rpx !important;
+}
+
+.ft_bold {
+	font-weight: bold !important;
+}
+
+.ft_normal {
+	font-weight: normal !important;
+}
+
+.ft_error {
+	color: #D80C18 !important;
+}
+
+.ftw_100 {
+	font-weight: 100 !important;
+}
+
+.ftw_200 {
+	font-weight: 200 !important;
+}
+
+.ftw_300 {
+	font-weight: 300 !important;
+}
+
+.ftw_400 {
+	font-weight: 400 !important;
+}
+
+.ftw_500 {
+	font-weight: 500 !important;
+}
+
+.ftw_600 {
+	font-weight: 600 !important;
+}
+
+.ftw_700 {
+	font-weight: 700 !important;
+}
+
+.ftw_800 {
+	font-weight: 800 !important;
+}
+
+.ftw_900 {
+	font-weight: 900 !important;
+}

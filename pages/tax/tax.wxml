@@ -1,0 +1,44 @@
+
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <picker bindchange="selectIncomeType" value="{{index}}" range="{{incomeTypeArr}}">
+        <view class="picker">
+          {{incomeTypeArr[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <input type="number" placeholder="请输入税前工资" bindinput="inputIncomeBeforeTax" auto-focus/>
+    </view>
+    <view class="section">
+      <input type="number" placeholder="各项社保金" bindinput="inputSocialSecurity" />
+    </view>
+    <view class="section">
+      <input type="number" placeholder="起征额（默认3500）" bindinput="inputTaxStart" />
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="taxCount">计算</button>
+      <button type="default" formType="reset" bindtap="reset">重置</button>
+    </view>
+  </form>
+  <view class="result">
+    <view>
+      ----------------------
+    </view>
+    <view class="resultTitle">
+      <text>计算结果</text>
+    </view>
+    <view class="section ">
+      <label>
+        <text>应缴税额:{{taxes}}</text>
+      </label>
+    </view>
+    <view class="section">
+      <label>
+        <text>税后收入:{{incomeAfterTax}}</text>
+      </label>
+    </view>
+  </view>
+</view>

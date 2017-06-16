@@ -1,0 +1,28 @@
+/* pages/tax/tax.wxss */
+form{
+    margin-top: -60px;
+}
+
+.section {
+  margin-top: 30px;
+  border-bottom: 1rpx solid #eee;
+}
+
+.result {
+    width: 80%;
+  margin-top: 50px;
+}
+
+.resultTitle {
+  text-align: left;
+}
+
+.userBtn{
+  padding: 0 5px 0 5px !important;
+}
+.btn-area {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

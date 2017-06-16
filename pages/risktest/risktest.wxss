@@ -1,0 +1,3 @@
+.bdtc{
+    border-top: 10rpx solid #ccc
+}

@@ -1,0 +1,22 @@
+<!--流程引导-->
+<view class="top_bg mgb10">
+  <view id="top_nav" class="flex-wrap">
+    <view class="nav_item_1">验证手机</view>
+    <view class="nav_item_2">开立账户</view>
+    <view class="nav_item_3 cur">选择服务</view>
+  </view>
+</view>
+
+<view class="choose_service_box section">
+  <view class="service_tt">请点选您要开通的业务（可多选）</view>
+  <view class="service_list">
+    <block wx:for="{{serviceArr}}" wx:for-index="idx" wx:for-item="item">
+      <image src="../../images/icon_wt_success@3x.png" class="seled" wx:if="{{item.seled}}"></image>
+      <view id="{{idx}}" class="classname" bindtap="seledObj">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+
+<view class="section mgt20">
+  <button bindtap="toPassword" class="btn lg-btn red-btn" hover-class="red-hover">下一步</button>
+</view>

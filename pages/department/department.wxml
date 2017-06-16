@@ -1,0 +1,42 @@
+<!--流程引导-->
+<view class="top_bg mgb10">
+  <view id="top_nav" class="flex-wrap">
+    <view class="nav_item_1">验证手机</view>
+    <view class="nav_item_2 cur">开立账户</view>
+    <view class="nav_item_3">选择服务</view>
+  </view>
+</view>
+
+<view class="mgb40">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section form_item bdbc">
+      <label>
+        <text>省/市/区 </text>
+        <picker mode="selector" bindchange="bindProChange" value="{{proIndex}}" range="{{proArr}}">
+          {{proArr[proIndex]}}
+          <image class="picker" src="../../images/picker_bg@3x.png"></image>
+        </picker>
+      </label>
+    </view>
+    <view class="section form_item bdbc">
+      <label>
+        <text>城市</text>
+        <picker class="picker" mode="selector" bindchange="bindCityChange" value="{{cityIndex}}" range="{{cityArr}}">{{cityArr[cityIndex]}}
+          <image class="picker" src="../../images/picker_bg@3x.png"></image>
+        </picker>
+      </label>
+    </view>
+    <view class="section form_item bdbc">
+      <label>
+        <text>营业部</text>
+        <picker class="picker" mode="selector" bindchange="bindDepChange" value="{{depIndex}}" range="{{depArr}}">{{depArr[depIndex]}}
+          <image class="picker" src="../../images/picker_bg@3x.png"></image>
+        </picker>
+      </label>
+    </view>
+
+    <view class="section mgt20">
+      <button bindtap="{{ validate ? 'toIdcardf' : ''}}" class="btn lg-btn red-btn {{ validate ? '' : 'disabled'}}" hover-class="red-hover">下一步</button>
+    </view>
+  </form>
+</view>

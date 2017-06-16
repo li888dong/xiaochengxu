@@ -1,0 +1,65 @@
+.video_tip_box{
+    background: url(../../images/icon_video.png) center 60rpx no-repeat;
+    background-size: 180rpx auto;
+    padding: 240rpx 0 60rpx;
+}
+
+.video_tip_box text{
+    display: block;
+    width: 93%;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    margin: 0 auto;
+}
+
+.video_tips{
+    background: #ffede8;
+    padding: 40rpx;
+    width: 80%;
+}
+
+.video_tips text{
+    display: block;
+    font-size: 26rpx;
+    line-height: 38rpx;
+}
+
+/*视频提示弹层*/
+.video_tips_dialog{
+    display: block;
+}
+.video_tips_dialog .dialog_content{
+    line-height: 38rpx;
+}
+.tips_info{
+    font-size: 48rpx;
+    line-height: 60rpx;
+    padding: 30rpx;
+    color: #D70E19;
+}
+
+/*视频预览*/
+.video_pre_box{
+    position: absolute;
+    background: #000;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+}
+.preVideo{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.preVideo video{
+    width: 100%;
+    height: 100%;
+}
+
+.chooseBtnAgain{
+    bottom: 100rpx;
+}

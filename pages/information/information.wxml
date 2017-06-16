@@ -1,0 +1,86 @@
+<!--流程引导-->
+<view class="top_bg mgb10">
+    <view id="top_nav" class="flex-wrap">
+        <view class="nav_item_1">验证手机</view>
+        <view class="nav_item_2 cur">开立账户</view>
+        <view class="nav_item_3">选择服务</view>
+    </view>
+</view>
+
+<view class="mgb40">
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section form_item bdbc">
+        <label>
+            <text>姓名</text>
+            <input type="text" class="input" maxlength="11" placeholder="" /></label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>身份证号</text>
+            <input type="number" class="input" maxlength="18" placeholder="" /></label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>签发机关</text>
+            <input type="text" class="input" maxlength="50" placeholder="" /></label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>证件地址</text>
+            <input type="text" class="input" maxlength="50" placeholder="" /></label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>通讯地址</text>
+            <input type="text" class="input" maxlength="11" placeholder="" /></label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>详细地址</text>
+            <textarea bindblur="bindTextAreaBlur" auto-height  />
+        </label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>起始期限</text>
+            <picker class="picker" mode="date" value="{{startDate}}" bindchange="listenerStartDatePickerSelected">
+    {{startDate}}
+</picker>
+        </label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>结束期限</text>        
+            <picker class="picker" mode="date" value="{{endDate}}"  bindchange="listenerEndDatePickerSelected">
+    {{endDate}}
+</picker>
+        </label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>邮编</text>
+            <input type="number" class="input" maxlength="6" placeholder="" /></label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>职业</text>
+            <picker class="picker" mode="selector" bindchange="bindJobChange" value="{{jobIndex}}" range="{{jobArr}}">
+    {{jobArr[jobIndex]}}
+  </picker>
+        </label>
+    </view>
+    <view class="section form_item bdbc">
+        <label>
+            <text>学历</text>
+            <picker class="picker" mode="selector" bindchange="bindEduChange" value="{{eduIndex}}" range="{{eduArr}}">
+    {{eduArr[eduIndex]}}
+  </picker>
+        </label>
+    </view>
+        
+    <view class="section mgt20">
+        <button bindtap="toAgreement" class="btn lg-btn red-btn {{validate ? '' : 'disabled'}}" hover-class="{{validate ? 'red-hover' : ''}}">{{validate ? '下一步' : '下一步'}}</button>
+    </view>
+
+</form>
+</view>

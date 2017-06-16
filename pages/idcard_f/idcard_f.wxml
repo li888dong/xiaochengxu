@@ -1,0 +1,35 @@
+<!--流程引导-->
+<view class="top_bg mgb10">
+    <view id="top_nav" class="flex-wrap">
+        <view class="nav_item_1">验证手机</view>
+        <view class="nav_item_2 cur">开立账户</view>
+        <view class="nav_item_3">选择服务</view>
+    </view>
+</view>
+
+
+<view class="top_camera_info">
+    <view>根据开户要求，需拍摄并上传身份证正面，</view>
+    <view>请确保身份证拍摄完整、无反光、文字清晰。</view>
+</view>
+
+<!--拍摄触发区域-->
+<view class="camera_box">
+    <!--拍摄身份证正面-->
+    <image class="chooseBtn" src="../../images/idcard_f_bg.jpg" bindtap="chooseIdCard"></image>
+
+    <!--预览-->
+    <view class="previewBox" wx:if="{{previewImg}}">
+        <image style="width: {{imagewidth}}px; height: {{imageheight}}px;" class="previewImg" src="{{previewImg}}" mode="aspecFill" bindload="imageLoad"/>
+        <button class="chooseBtnAgain" bindtap="chooseIdCard">重新拍摄</button>
+    </view>
+    
+    <view class="text-gold text-center mgb10">拍摄身份证正面</view>
+    <view class="text-red text-center mgb20">(有您照片的一面)</view>
+</view>
+
+
+<!--上传按钮-->
+<view class="section mgt40">
+    <button bindtap="{{ validate ? 'uploadIdcard' : ''}}" class="btn lg-btn red-btn {{ validate ? '' : 'disabled'}}" hover-class="red-hover">上传身份证正面</button>
+    </view>
